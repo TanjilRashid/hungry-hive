@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="relative px-32 pt-12 pb-24">
+        <nav class="flex justify-between items-center text-white">
+            <div class="logo-main">
+                <img src="images/logo_text.png" alt="">
+            </div>
+            <div class="nav-items flex justify-around items-center text-lg">
+                <a href="">Shoppers</a>
+                <a class="ml-20" href="">Retailers</a>
+                <a class="ml-20" href="">More</a>
+                <button class="ml-20 border border-white px-6 py-2 hover:bg-white hover:text-black">Get Started</button>
+            </div>
+        </nav>
+        <div class="main-bnr flex mt-32">
+            <div class="main-bnr-info w-1/2 text-white">
+                <p class="bg-green-200 text-green-600 py-1 px-2 inline-block rounded-3xl mb-6">Keep Your Receipts Green With Our Digital Solution</p>
+                <h1 class="text-7xl text-bolder mb-6">Hive Your <span class="bg-emerald-800 p-0">Receipts</span> And Warranties – Go Paperless</h1>
+                <p class="text-lg text-neutral-300 w-4/5 mb-20"> Say goodbye! to bulky wallets and cluttered cabinets filled with receipts and warranties. HungryHive simplifies your life by storing your digital receipts and warranties all in one place.</p>
+                <div class="user-info flex items-center">
+                    <img class="mr-12" src="images/three-users.png" alt="">
+                    <div class="mr-6" class="user-uptime">
+                        <h3 class="text-3xl">99.9 <span class="text-emerald-600">%</span></h3>
+                        <p class="text-neutral-300">Uptime</p>
+                    </div>
+                    <div class="user-active border-l border-left-neutral-800 pl-6">
+                        <h3 class="text-3xl">100K <span class="text-emerald-600">+</span></h3>
+                        <p class="text-neutral-300">Active Users</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative main-bnr-image w-1/2">
+                <img class="" src="images/phone.png" alt="">
+                <img class="absolute top-0 left-20 -z-10 animate-[spin_15s_linear_infinite]" src="images/phone_bg.png" alt="">
+            </div>
+        </div>
+        <div class="back-plate flex absolute top-0 left-0 w-full h-full -z-50">
+            <div class="w-2/3 bg-neutral-900"></div>
+            <div class="w-1/3 bg-emerald-800"></div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="featured-brands flex justify-between px-32 py-12">
+            <img src="images/brand-19.png" alt="">
+            <img src="images/brand-20.png" alt="">
+            <img src="images/brand-21.png" alt="">
+            <img src="images/brand-22.png" alt="">
+            <img src="images/brand-23.png" alt="">
+            <img src="images/brand-24.png" alt="">
+        </section>
+        <section class="purchase-info bg-neutral-900 px-32 py-32">
+            <div class="purchase-title-text flex items-center text-white pb-24 gap-24">
+                <h2 class="text-7xl text-bolder w-2/5">Ditch the clutter and embrace simplicity</h2>
+                <P class="text-lg text-neutral-300 w-2/5">Not only can you easily access and organize your receipts, but you can also keep track of the warranty claims for your purchased products. No more digging through stacks of papers to find the information you need – it's all right at your fingertips.</P>
+            </div>
+            <div class="purchase-product-images flex gap-6">
+                <div class="purchase-product-image-left w-2/5 bg-yellow-200 p-12 relative">
+                    <div class="purchase-product-image-left-upper">
+                        <h3 class="text-3xl font-semibold mb-6">Keep track of their <br> product warranties</h3>
+                        <p class="text-xl">allows users to keep track of their product warranties, ensuring that they can easily claim repairs or replacements should they be necessary</p>
+                    </div>
+                    <div class="purchase-product-image-left-lower">
+                        <img class="absolute w-2/3 right-0 bottom-0" src="images/product-image-left-bac.png" alt="">
+                    </div>
+                </div>
+                <div class="purchase-product-image-right flex flex-col gap-6 3/5">
+                    <div class="purchase-product-image-right-one flex justify-between bg-pink-200 pt-12 pl-12">
+                        <div class="purchase-product-image-right-one-left w-1/2">
+                            <h3 class="text-3xl font-semibold mb-6 mt-12">Purchase Information</h3>
+                            <p class="text-xl pr-12">Whether paying with cash or card, HungryHive effortlessly captures and stores all the necessary receipt information.</p>
+                        </div>
+                        <div class="purchase-product-image-right-one-right w-1/2">
+                            <img class="float-right w-3/4" src="images/purchase-product-image-right-one-right.png" alt="">
+                        </div>
+                    </div>
+                    <div class="purchase-product-image-right-two flex bg-sky-200 pt-12 pr-12">
+                        <div class="purchase-product-image-right-two-left w-1/2">
+                            <img class="w-5/6" src="images/purchase-product-image-right-two-left.png" alt="">
+                        </div>
+                        <div class="purchase-product-image-right-two-right w-1/2">
+                            <h3 class="text-3xl font-semibold mb-6 mt-12">Advanced Security <br>Measures</h3>
+                            <p class="text-xl pr-12">HungryHive ensures that all user data is securely protected, using the latest encryption technologies to prevent unauthorized access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex">
+            <div class="rating-section-image w-1/2">
+                <img class="w-full" src="images/rating-section-image.png" alt="">
+            </div>
+            <div class="rating-section-info w-1/2 p-32 text-white bg-emerald-800">
+                <h3 class="text-7xl pb-6">Track your purchases, set time alerts & Categorize Invoices</h3>
+                <p class="text-xl font-light pb-24 border-b-2 border-emerald-700"> With just a few taps, you can manage all of your purchases <br> effortlessly and securely</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
